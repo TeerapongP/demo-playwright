@@ -39,9 +39,10 @@ export default function TicketsPage() {
               <p style={{ color: "var(--ink-3)", marginBottom: 24 }}>จองตั๋วคอนเสิร์ตแรกของคุณได้เลย!</p>
               <Link href="/concerts" style={{
                 display: "inline-block", padding: "12px 28px", borderRadius: 10,
-                background: "var(--accent)", color: "#08090c",
+                background: "var(--accent)",
                 fontWeight: 600, fontSize: 14, textDecoration: "none",
                 boxShadow: "0 0 20px rgba(192,132,252,0.3)",
+                color: "white",
               }}>
                 ดูคอนเสิร์ต →
               </Link>
