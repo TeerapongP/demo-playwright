@@ -1,1 +1,54 @@
-node_modules
+# dependencies
+/node_modules
+/.pnpm-debug.log
+/jspm_packages
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# testing (playwright/jest)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache
+
+# prisma
+/prisma/migrations/
+/prisma/*.db
+/prisma/*.db-journal
+
+# ide - vscode
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# operating system
+.DS_Store
+Thumbs.db
+
+# docker
+.docker
