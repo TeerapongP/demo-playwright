@@ -73,7 +73,7 @@ function LoginForm() {
 
               <Button label="เข้าสู่ระบบ" data-testid="btn-login" onClick={handleLogin} loading={loading} style={{ width: "100%", marginTop: 8 }} />
 
-              <div style={{ padding: "16px", background: "var(--bg)", border: "1px solid var(--border)", borderRadius: 12 }}>
+              {/* <div style={{ padding: "16px", background: "var(--bg)", border: "1px solid var(--border)", borderRadius: 12 }}>
                 <div style={{ fontSize: 11, color: "var(--ink-3)", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 500 }}>Demo Account</div>
                 <button
                   data-testid="btn-fill-demo"
@@ -92,7 +92,7 @@ function LoginForm() {
                 >
                   คลิกเพื่อใช้บัญชีทดสอบ
                 </button>
-              </div>
+              </div> */}
 
               <div style={{ textAlign: "center", paddingTop: 8, borderTop: "1px solid var(--border)" }}>
                 <p style={{ fontSize: 14, color: "var(--ink-2)" }}>
