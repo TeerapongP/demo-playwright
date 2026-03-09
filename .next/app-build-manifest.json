@@ -16,20 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/concerts/page.js"
     ],
+    "/register/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/register/page.js"
+    ],
     "/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/login/page.js"
-    ],
-    "/tickets/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/tickets/page.js"
-    ],
-    "/booking/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/booking/page.js"
     ]
   }
 }

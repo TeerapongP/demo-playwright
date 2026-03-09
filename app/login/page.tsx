@@ -50,13 +50,13 @@ function LoginForm() {
 
           <div style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 16, padding: "40px", boxShadow: "0 4px 6px rgba(0,0,0,0.05)" }}>
             {registered && (
-              <div style={{ marginBottom: 20 }}>
-                <Message severity="success" text="สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบ" data-testid="register-success-msg" />
+              <div style={{ marginBottom: 20, marginLeft: 10 }}>
+                <Message severity="success" text=" สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบ" data-testid="register-success-msg" />
               </div>
             )}
             {error && (
               <div style={{ marginBottom: 20 }}>
-                <Message severity="error" text={error} data-testid="login-error" />
+                <Message severity="error" text={` ${error}`} data-testid="login-error" />
               </div>
             )}
 

@@ -52,7 +52,7 @@ export default function RegisterPage() {
       <main style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "80px 24px 40px", background: "linear-gradient(to bottom, var(--bg), var(--bg-2))" }}>
         <div style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: 460 }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <div style={{ 
+            <div style={{
               display: "inline-block",
               padding: "16px",
               background: "var(--ink)",
@@ -66,7 +66,7 @@ export default function RegisterPage() {
           </div>
 
           <div style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 16, padding: "40px", boxShadow: "0 4px 6px rgba(0,0,0,0.05)" }}>
-            {serverError && <div style={{ marginBottom: 20 }}><Message severity="error" text={serverError} data-testid="register-error" /></div>}
+            {serverError && <div style={{ marginBottom: 20 }}><Message severity="error" text={` ${serverError}`} data-testid="register-error" /></div>}
 
             <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
               {/* Name */}
@@ -86,7 +86,7 @@ export default function RegisterPage() {
               {/* Phone */}
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 <label style={{ fontSize: 14, fontWeight: 500, color: "var(--ink)" }}>เบอร์โทรศัพท์</label>
-                <InputText data-testid="input-phone" type="tel" value={form.phone} onChange={set("phone")} placeholder="0812345678" className={errors.phone ? "p-invalid" : ""} />
+                <InputText data-testid="input-phone" type="tel" value={form.phone} onChange={set("phone")} placeholder="0812345678" maxLength={10} className={errors.phone ? "p-invalid" : ""} />
                 {errors.phone && <small data-testid="error-phone" style={{ fontSize: 13, color: "var(--red)" }}>{errors.phone}</small>}
               </div>
 
