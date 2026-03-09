@@ -35,7 +35,7 @@ function LoginForm() {
       <main style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "80px 24px 40px", background: "linear-gradient(to bottom, var(--bg), var(--bg-2))" }}>
         <div style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: 420 }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <div style={{ 
+            <div style={{
               display: "inline-block",
               padding: "16px",
               background: "var(--ink)",
@@ -51,7 +51,7 @@ function LoginForm() {
           <div style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 16, padding: "40px", boxShadow: "0 4px 6px rgba(0,0,0,0.05)" }}>
             {registered && (
               <div style={{ marginBottom: 20 }}>
-                <Message severity="success" text="✅ สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบ" data-testid="register-success-msg" />
+                <Message severity="success" text="สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบ" data-testid="register-success-msg" />
               </div>
             )}
             {error && (
@@ -78,14 +78,14 @@ function LoginForm() {
                 <button
                   data-testid="btn-fill-demo"
                   onClick={() => { setEmail("demo@stagepass.dev"); setPassword("demo1234"); }}
-                  style={{ 
-                    fontSize: 13, 
-                    color: "var(--ink)", 
-                    background: "none", 
-                    border: "none", 
-                    cursor: "pointer", 
-                    padding: 0, 
-                    textAlign: "left" as const, 
+                  style={{
+                    fontSize: 13,
+                    color: "var(--ink)",
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    padding: 0,
+                    textAlign: "left" as const,
                     fontFamily: "'Inter', sans-serif",
                     textDecoration: "underline",
                   }}
