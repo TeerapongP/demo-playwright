@@ -43,7 +43,7 @@ export default function RegisterPage() {
     const result = registerUser(form.name, form.email, form.phone, form.password);
     setLoading(false);
     if (!result.ok) { setServerError(result.error || "เกิดข้อผิดพลาด"); return; }
-    router.push("/login?registered=1");
+    router.push("/login");
   };
 
   return (
